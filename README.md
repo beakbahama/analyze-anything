@@ -1,4 +1,4 @@
-# The Analyze Anything Framework (AAF): Evaluate Coherence, Validity, and Novelty *of Anything!*
+# The Analyze Anything Framework (AAF): Evaluate Coherence, Rigor, and Novelty *of Anything!*
 > *It's nonsense!  
 > It's gibberish!  
 > No wait, it's actually original!*
