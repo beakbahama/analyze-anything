@@ -11,7 +11,7 @@
 >
 > This is not a tool for finding comfortable answers. It is a weapon for getting to the deep structure of truth.
 
-### **➡️ Get started with the [Quick Start Guide](#quick-start-guide) or go directly to the [Full Prompt](/guides/main.md#the-prompt)**
+### **➡️ Get started with the [Quick Start Guide](#quick-start-guide), read the [Full Main Guide](/guides/main.md), or see the [Main Prompt](/guides/main.md#the-prompt)**
 
 
 ## Explore
@@ -24,7 +24,6 @@
 - [License](#license) - Use and build on the framework freely.
 
 *Read the [Main Framework Guide ↗](/guides/main.md) to get deep into the main AAF prompt and the reasoning behind it.*
-
 
 ---
 ## Executive Summary
