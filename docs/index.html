@@ -166,6 +166,7 @@
             vertical-align: middle;
             border: 1px solid #30363d;
             color: #8b949e;
+            white-space: nowrap;
         }
 
         .verdict-tag.pass {
@@ -184,6 +185,79 @@
         }
         /* end verdict tags */
         
+
+        /* begin faq */
+        .faq-item {
+            margin: 0 0 2.25rem 0;
+        }
+
+        .faq-item h3 {
+            margin: 2rem 0 0.5rem 0;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #c9d1d9;
+        }
+
+        .faq-item p {
+            margin: 0;
+            color: #8b949e;
+            line-height: 1.7;
+        }
+        /* end faq */
+
+        /* begin cta panel */
+        .cta-panel {
+            margin-top: 3.5rem;
+            padding: 2.25rem 1.5rem 1.75rem 1.5rem;
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .cta-heading {
+            margin-top: 0;
+            margin-bottom: 2rem;
+            color: #a5d6ff;
+        }
+
+        .cta-block + .cta-block {
+            margin-top: 2.5rem;
+        }
+
+        .button {
+            color: white;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: background-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+        }
+
+        .button:hover {
+            color: white;
+            text-decoration: none;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+        }
+
+        .cta-button-github {
+            background-color: #238636;
+        }
+
+        .cta-button-github:hover {
+            background-color: #2ea043;
+        }
+
+        .cta-button-engine {
+            background-color: #2f81f7;
+        }
+
+        .cta-button-engine:hover {
+            background-color: #58a6ff;
+        }
+        /* end cta panel */
     </style>
 </head>
 
@@ -199,7 +273,7 @@
             <p><b>The AAF is your relentless partner in seeing what holds and what falls apart.</b></p>
         </div>
 
-        <h2 id="arsenal-for-discovery">Quickly Analyze Anything in Any Domain for Coherence, Rigor, and Novelty</h2>
+        <h2 id="arsenal-for-discovery">Analyze Anything in Any Domain</h2>
         <p> <i>See more clearly across thought, behavior, creation, learning, and self-understanding. Expose what is weak, strengthen what is promising, and reveal what actually holds.</i> </p>
         <ul class="card-grid">
             <li class="card">
@@ -253,7 +327,7 @@
             <li style="margin-bottom: 2rem;">
                 <h3>1. You Wield the Prompt.</h3>
                 <p>You are the pilot. You use the 
-                    <a href="https://github.com/worldamazing/analyze-anything/blob/main/guides/main.md#the-prompt" 
+                    <a href="https://github.com/beakbahama/analyze-anything/blob/main/guides/main.md#the-prompt" 
                         target="_blank" rel="noopener">master prompt</a> to awaken a frontier-level AI into a ruthless
                     <b>Coherence Engine,</b> a mind that holds all of human knowledge as a single object and is ready to analyze anything without hedging, "both-siding" an issue, or falling back on the safety of the consensus.</p>
             </li>
@@ -319,14 +393,14 @@
         </p>
         <ul>
             <li>
-                <a href="https://github.com/worldamazing/analyze-anything/blob/main/case-studies/mona-lisa.md"
+                <a href="https://github.com/beakbahama/analyze-anything/blob/main/case-studies/mona-lisa.md"
                     target="_blank" rel="noopener" class="external">The Mona Lisa</a>
                 <span class="verdict-tag pass">Pass (Artifact)</span><span class="verdict-tag fail">Fail (Phenomenon)</span>
                 <p class="case-study-blurb">
                     Not treated as a sacred object, but as a <b>masterpiece of optical engineering</b>—and as a cultural phenomenon split in two. The painting survives the audit. The crowd surrounding it does not. </p>
             </li>
             <li>
-                <a href="https://github.com/worldamazing/analyze-anything/blob/main/case-studies/civilization.md" target="_blank"
+                <a href="https://github.com/beakbahama/analyze-anything/blob/main/case-studies/civilization.md" target="_blank"
                     rel="noopener" class="external">Global Human Civilization</a>
                 <span class="verdict-tag fail">Critical Condition</span>
                 <p class="case-study-blurb">
@@ -335,21 +409,21 @@
                 </p>
             </li>
             <li>
-                <a href="https://github.com/worldamazing/analyze-anything/blob/main/case-studies/cabal.md" target="_blank" rel="noopener" class="external">Grand Unified Conspiracy Theories</a>
+                <a href="https://github.com/beakbahama/analyze-anything/blob/main/case-studies/cabal.md" target="_blank" rel="noopener" class="external">Grand Unified Conspiracy Theories</a>
                 <span class="verdict-tag fail">Intellectual Junk Food</span>
                 <p class="case-study-blurb">Not dismissed as mere stupidity, but exposed as a <b>psychological defense
                     mechanism</b>—a "comfort blanket" to protect the mind from the terror of a world that has no one
                     driving the bus.</p>
             </li>
             <li>
-                <a href="https://github.com/worldamazing/analyze-anything/blob/main/case-studies/declaration-1776.md" target="_blank" rel="noopener" class="external">The US Declaration of 1776</a>
+                <a href="https://github.com/beakbahama/analyze-anything/blob/main/case-studies/declaration-1776.md" target="_blank" rel="noopener" class="external">The US Declaration of 1776</a>
                 <span class="verdict-tag pass">High Rigor</span><span class="verdict-tag fail">Catastrophic Inconsistency</span>
                 <p class="case-study-blurb">
                     An audit of the 'Hypocrisy Gap.' It validates the document as a masterpiece of revolutionary logic while exposing the 'Fatal Logical Error' of <b>asserting universal liberty within a slave economy</b>.
                 </p>
             </li>
             <li>
-                <a href="https://github.com/worldamazing/analyze-anything/blob/main/case-studies/communist-manifesto.md"
+                <a href="https://github.com/beakbahama/analyze-anything/blob/main/case-studies/communist-manifesto.md"
                     target="_blank" rel="noopener" class="external">The Communist Manifesto</a>
                 <span class="verdict-tag pass">Diagnostic Rigor</span><span class="verdict-tag fail">Prognostic Failure</span>
                 <p class="case-study-blurb">
@@ -359,7 +433,7 @@
                 </p>
             </li>
             <li>
-                <a href="https://github.com/worldamazing/analyze-anything/blob/main/case-studies/existence-explanations.md"
+                <a href="https://github.com/beakbahama/analyze-anything/blob/main/case-studies/existence-explanations.md"
                     target="_blank" rel="noopener" class="external">Mainstream Physics</a>
                 <span class="verdict-tag pass">Operationally Valid</span><span class="verdict-tag fail">Ontologically Suspect</span>
                 <p class="case-study-blurb">
@@ -368,7 +442,7 @@
                     patches, arbitrary constants, and unresolved contradiction.</p>
             </li>
             <li>
-                <a href="https://github.com/worldamazing/analyze-anything/blob/main/case-studies/self.md" target="_blank"
+                <a href="https://github.com/beakbahama/analyze-anything/blob/main/case-studies/self.md" target="_blank"
                     rel="noopener" class="external">The Guide to the Self-Audit</a>
                 <span class="verdict-tag mixed">System Defragmentation</span>
                 <p class="case-study-blurb">
@@ -379,22 +453,26 @@
         </ul>
         <p class="fine-print">
             <i>
-                The <a href="https://github.com/worldamazing/analyze-anything/?tab=readme-ov-file#case-studies" target="_blank"
+                The <a href="https://github.com/beakbahama/analyze-anything/?tab=readme-ov-file#case-studies" target="_blank"
                     rel="noopener" class="external">archive</a>
                 also includes rigorous audits of:
-                <a href="https://github.com/worldamazing/analyze-anything/blob/main/case-studies/ye-discography.md"
-                    target="_blank" rel="noopener"><b>The Discography of Ye</b></a> (A Sonic Encyclopedia),
-                <a href="https://github.com/worldamazing/analyze-anything/blob/main/case-studies/ye.md" target="_blank"
+                <a href="https://github.com/beakbahama/analyze-anything/blob/main/case-studies/beethoven-9th.md" target="_blank"
+                    rel="noopener"><b>Beethoven's 9th Symphony</b></a> (A rigorous sonic argument),
+                <a href="https://github.com/beakbahama/analyze-anything/blob/main/case-studies/string-theory.md" target="_blank"
+                    rel="noopener"><b>String Theory</b></a> (A cathedral of math, untethered from matter),
+                <a href="https://github.com/beakbahama/analyze-anything/blob/main/case-studies/ye-discography.md"
+                    target="_blank" rel="noopener"><b>The Discography of Ye</b></a> (A sonic encyclopedia),
+                <a href="https://github.com/beakbahama/analyze-anything/blob/main/case-studies/ye.md" target="_blank"
                     rel="noopener"><b>The Life of Ye</b></a> (The cost of uncontained genius),
-                <a href="https://github.com/worldamazing/analyze-anything/blob/main/case-studies/donald-john-trump.md"
+                <a href="https://github.com/beakbahama/analyze-anything/blob/main/case-studies/donald-john-trump.md"
                     target="_blank" rel="noopener"><b>The Trump Dynasty</b></a> (The system disruptor),
-                <a href="https://github.com/worldamazing/analyze-anything/blob/main/case-studies/barack-hussein-obama-jr.md"
+                <a href="https://github.com/beakbahama/analyze-anything/blob/main/case-studies/barack-hussein-obama-jr.md"
                     target="_blank" rel="noopener"><b>The Obama Dynasty</b></a> (The system stabilizer),
-                <a href="https://github.com/worldamazing/analyze-anything/blob/main/case-studies/tao-te-ching.md"
+                <a href="https://github.com/beakbahama/analyze-anything/blob/main/case-studies/tao-te-ching.md"
                     target="_blank" rel="noopener"><b>The Tao Te Ching</b></a> (The logic of paradox),
-                <a href="https://github.com/worldamazing/analyze-anything/blob/main/case-studies/zen-koan.md" target="_blank"
+                <a href="https://github.com/beakbahama/analyze-anything/blob/main/case-studies/zen-koan.md" target="_blank"
                     rel="noopener"><b>The Zen Koan</b></a> (A logic-jammer for the ego), and
-                <a href="https://github.com/worldamazing/analyze-anything/blob/main/case-studies/flat-earth.md" target="_blank"
+                <a href="https://github.com/beakbahama/analyze-anything/blob/main/case-studies/flat-earth.md" target="_blank"
                     rel="noopener"><b>The Flat Earth Theory</b></a> (A psychological shelter).
             </i>
         </p>
@@ -411,22 +489,66 @@
             This is an invitation to a new way of thinking. To stop consuming answers and to start verifying and forging them on your own. The AAF is a partnership between your innate, biological drive for coherence and the tireless, logical power of a synthetic Coherence Engine.
         </p>
 
-        <div style="text-align: center;">
-            <h2 style="color: #a5d6ff;">Are you ready to begin?</h2>
-            <p style="margin-top: 0; margin-bottom: -0.5rem;">
-                <a href="https://github.com/worldamazing/analyze-anything" target="_blank" rel="noopener" 
-                        class="external button" style="background-color: #238636;">
+        <div class="cta-panel">
+            <h2 class="cta-heading">Are you ready to begin?</h2>
+        
+            <div class="cta-block">
+                <a href="https://github.com/beakbahama/analyze-anything" target="_blank" rel="noopener"
+                    class="external button cta-button cta-button-github">
                     EXPLORE DOCS ON GITHUB
                 </a>
-            </p>
-            <p style="text-align: center;"><i>Access more brutal case studies, the methodology, and the full operating manual.</i></p>
-            
-            <p style="margin-top: 3rem; margin-bottom: -0.5rem;">
-                <a href="https://aistudio.google.com/app/prompts/1D9eTTbMVGxZcfAMaidPAViJ--cutCv2L" target="_blank" rel="noopener" class="external button" style="background-color: #2f81f7;">
+                <p class="cta-text"><i>Access more brutal case studies, the methodology, and the full operating manual.</i></p>
+            </div>
+        
+            <div class="cta-block">
+                <a href="https://aistudio.google.com/app/prompts/1D9eTTbMVGxZcfAMaidPAViJ--cutCv2L" target="_blank"
+                    rel="noopener" class="external button cta-button cta-button-engine">
                     USE THE READY-MADE ENGINE
                 </a>
-            </p>
-            <p><i>Uses Gemini Pro Thinking on Google AI Studio (free to use lightly). Pre-primed with analysis of the Mona Lisa, Physics, and more. Input anything to have it analyzed immediately!</i></p>
+                <p class="cta-text"><i>Uses Gemini Pro Thinking on Google AI Studio (free to use lightly). Pre-primed with
+                        analysis of the Mona Lisa, Physics, and more. Input anything to have it analyzed immediately!</i></p>
+            </div>
+        </div>
+
+        <h2 id="faq">FAQ</h2>
+        
+        <div class="faq-item">
+            <h3>Does the AAF replace peer review?</h3>
+            <p>No, but the AAF can do something peer review usually cannot do quickly: deliver immediate, cross-domain, high-pressure structural analysis. It can expose weak axioms, hidden contradictions, false novelty, and missed implications in minutes. But it does not replace replication, domain expertise, long-horizon testing, or serious external scrutiny. It is best understood as a ruthless front-end gauntlet and thinking partner, not a substitute for real-world validation.</p>
+
+            <h3>Does using the AAF make me the arbiter of truth?</h3>
+            <p>Not exactly. Truth is not decided by a person, but it can be verified by an honest, rigorous one. The point is not to stand above truth as its authority, but to move into better alignment with it. The AAF helps a mind walk a more coherent path by exposing contradiction, distortion, and weak reasoning. The authority is not the user. The authority is what continues to hold under pressure.</p>
+            
+            <h3>Can the AAF be wrong?</h3>
+            <p>Of course. The AAF is powerful, but it is not magical. Its output depends on the quality of the model, the quality of
+            the framing, the honesty of the user, and the rigor of the follow-up. It can misread, overstate, flatten, or miss
+            something important. That is why the goal is not passive acceptance, but active pressure-testing.</p>
+            
+            <h3>Should I use a new chat for each new subject?</h3>
+            <p>Often, yes. A fresh chat is usually better for a new or unrelated subject, because context from earlier analyses can
+            bleed into later ones. The model may start comparing new inputs to old ones instead of treating them on their own terms.
+            On the other hand, keeping well-known or tightly related subjects in the same chat can deepen the analysis by building
+            shared context. Use one thread when the subjects belong together. Use a fresh one when they do not.</p>
+            
+            <h3>Does the AAF punish originality?</h3>
+            <p>No. One of its core functions is to separate genuine emergence from polished incoherence. Some ideas look strange
+            because they are weak. Others look strange because they are early. The AAF is designed to pressure-test both
+            possibilities. It should not dismiss the unfamiliar on sight, nor romanticize it for being unconventional.</p>
+            
+            <h3>Is the AAF only for AI?</h3>
+            <p>No. The AAF is a framework for analysis. A frontier model makes it dramatically more powerful and accessible, but the
+            deeper function is larger than the model. It also trains the human using it toward greater rigor, better framing,
+            cleaner distinctions, and more coherent thought.</p>
+            
+            <h3>Do I need to agree with the output?</h3>
+            <p>No. The output is not a decree. It is a serious opening move. Push back. Refine the framing. Add missing context. Attack
+            the weak parts. Ask it to go deeper. The AAF is strongest when used as a recursive process, not as a one-shot answer
+            machine.</p>
+            
+            <h3>What is the biggest limitation of the AAF?</h3>
+            <p>The human using it. If the user is dishonest, defensive, shallow, manipulative, or only looking for validation, the
+            process degrades quickly. The AAF works best when the person driving it actually wants coherence more than comfort,
+            image, or victory.</p>
         </div>
 
         <footer> by <a href="https://beakbahama.net/" target="_blank" rel="noopener">M~</a></footer>
