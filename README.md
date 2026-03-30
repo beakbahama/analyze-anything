@@ -198,9 +198,10 @@ Below is a growing library of analyses that demonstrate the framework's power to
 ### Science & Ontology: Mapping the Territory
 *Audits of the models we use to describe physical reality.*
 
-- **[Various Explanations of Existence: The Standard, The New, and The Fringe](/case-studies/existence-explanations.md):** A ruthless, side-by-side audit of the mainstream physics model, a new synthesis based on "Kinematic Flow," and the incoherent fringe theory of Terryology. **This demonstrates the framework's ability to strip away the "Authority Bias" of established science.**
+- **[Mainstream Physics: A High-Fidelity Descriptive Map, but Not a Theory of Territory](/case-studies/mainstream-physics.md):** A ruthless audit of the Standard Model, General Relativity, and Lambda-CDM as an engineering triumph built on an ontologically fractured foundation. **It shows how a framework can be operationally powerful while remaining philosophically unresolved.**
 - **[String Theory: A Magnificent Fantasy](/case-studies/string-theory.md):** A rigorous audit of the dominant "Theory of Everything." **It reveals the theory as a masterpiece of mathematical architecture that fails the basic tests of science: falsifiability, parsimony, and connection to observable reality.**
 - **[The Flat Earth Theory: A Psychological Shelter](/case-studies/flat-earth.md):** An analysis of a failed physics model that succeeds as a psychological shelter. **It demonstrates how to analyze a belief for its "Utility" rather than just its "Truth."**
+- **[Terryology: An Inconsistent Model of Reality](/case-studies/terryology.md):** A direct stress test of Terrence Howard’s physics and mathematical claims. **It demonstrates the AAF’s ability to identify category errors, incoherent axioms, and failures of basic logical validity without mistaking intuition for rigor.**
 
 ### The Human Archetype: The Architecture of Persona
 *Deep structural audits of iconic figures, treating their lives not as biographies but as strategic case studies in power, trauma, and legacy.*
