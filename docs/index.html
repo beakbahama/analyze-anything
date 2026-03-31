@@ -14,6 +14,10 @@
             color-scheme: dark;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             background-color: #0d1117;
             color: #c9d1d9;
@@ -23,24 +27,6 @@
             justify-content: center;
             align-items: center;
             padding: 18px 36px 36px 36px;
-        }
-
-        footer {
-            margin-top: 4rem;
-            padding-top: 1.5rem;
-            font-size: 0.85rem;
-            color: #8b949e;
-            text-align: center;
-            position: relative;
-        }
-
-        footer::before {
-            content: "";
-            display: block;
-            width: 120px;
-            height: 1px;
-            background-color: #21262d;
-            margin: 0 auto 0.69rem auto;
         }
 
         .container {
@@ -85,6 +71,10 @@
             line-height: 1.4;
             padding-top: 18px;
             text-align: center;
+        }
+
+        .fine-print a {
+            white-space: nowrap;
         }
 
         .title {
@@ -161,6 +151,52 @@
             padding-left: 1rem;
         }
 
+        /* begin footer tags */
+        footer {
+            margin-top: 4rem;
+            padding-top: 1.5rem;
+            font-size: 0.85rem;
+            color: #8b949e;
+            text-align: center;
+            position: relative;
+        }
+
+        footer::before {
+            content: "";
+            display: block;
+            width: 160px;
+            height: 1px;
+            background-color: #21262d;
+            margin: 0 auto 0.69rem auto;
+        }
+        
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.6rem 1rem;
+            margin-bottom: 0.85rem;
+        }
+
+        .footer-links a {
+            color: #8b949e;
+            font-size: 0.85rem;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .footer-links a:hover {
+            color: #58a6ff;
+            text-decoration: underline;
+        }
+
+        .footer-credit {
+            font-size: 0.85em;
+            color: #8b949e;
+            margin-top: 2rem;
+        }
+        /* end footer tags */
+
         /* begin verdict tags */
         .verdict-tag {
             font-size: 0.7rem;
@@ -215,6 +251,7 @@
             margin-top: 1.2rem;
         }
         /* end faq */
+
 
         /* begin cta panel */
         .cta-panel {
@@ -293,6 +330,74 @@
             line-height: 1.7;
         }
         /* end input guide */
+
+
+        /* begin top nav module */
+        .top-nav-module {
+            margin: 2rem auto 3rem auto;
+            padding: 1rem 1.1rem 1.1rem 1.1rem;
+            max-width: 44rem;
+            background-color: #161b22;
+            border: 1px solid #21262d;
+            border-radius: 10px;
+        }
+
+        .page-nav-wrap {
+            text-align: center;
+        }
+
+        .page-nav-label {
+            display: block;
+            margin-bottom: 0.55rem;
+            font-size: 0.78rem;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: #6e7681;
+        }
+
+        .page-nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.7rem 1rem;
+            font-size: 0.95rem;
+        }
+
+        .page-nav a {
+            color: #8b949e;
+            text-decoration: none;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+
+        .page-nav a:hover {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+
+        .page-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.65rem 1rem;
+            margin-top: 1rem;
+            padding-top: 0.9rem;
+            border-top: 1px solid #21262d;
+            font-size: 0.9rem;
+        }
+
+        .page-links a {
+            color: #a5d6ff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .page-links a:hover {
+            color: #58a6ff;
+            text-decoration: underline;
+        }
+        /* end top nav module */
     </style>
 </head>
 
@@ -307,9 +412,34 @@
             
             <p><b>At its core, the AAF is a tool for intellectual self-reliance: a way to examine what holds without depending entirely on consensus, gatekeepers, or received authority.</b></p>
         </div>
+        <div class="top-nav-module">
+            <div class="page-nav-wrap">
+                <span class="page-nav-label">On this page:</span>
+                <nav class="page-nav" aria-label="Page sections">
+                    <a href="#what-it-does">What It Does</a>
+                    <a href="#the-invitation">The Invitation</a>
+                    <a href="#how-it-works">How It Works</a>
+                    <a href="#the-gauntlet">The Gauntlet</a>
+                    <a href="#input-guide">Input Guide</a>
+                    <a href="#case-studies">Case Studies</a>
+                    <a href="#faq">FAQ</a>
+                </nav>
+            </div>
+        
+            <div class="page-links" aria-label="Primary links">
+                <a href="https://aistudio.google.com/app/prompts/1D9eTTbMVGxZcfAMaidPAViJ--cutCv2L" target="_blank"
+                    rel="noopener" class="external">Ready-Made Engine</a>
+                <a href="https://github.com/beakbahama/analyze-anything/blob/main/guides/main.md" target="_blank" rel="noopener"
+                    class="external">Main Guide</a>
+                <a href="https://github.com/beakbahama/analyze-anything/blob/main/guides/main.md#the-prompt" target="_blank"
+                    rel="noopener" class="external">Main Prompt</a>
+                <a href="https://github.com/beakbahama/analyze-anything" target="_blank" rel="noopener" class="external">GitHub
+                    Repo</a>
+            </div>
+        </div>
 
 
-        <h2 id="analyze-anything">Analyze Anything in Any Domain</h2>
+        <h2 id="what-it-does">What It Does: Analyze Anything in Any Domain</h2>
         <p> <i>See more clearly across thought, behavior, creation, learning, and self-understanding. Expose what is weak, strengthen what is promising, and reveal what actually holds.</i> </p>
         <ul class="card-grid">
             <li class="card">
@@ -434,7 +564,7 @@
 
         </ul>
 
-        <h2 id="good-input">How to Give the AAF Good Input</h2>
+        <h2 id="input-guide">How to Give the AAF Clear Input</h2>
         <p>
             <i>The AAF can only analyze what you actually give it. Different subjects require different kinds of input. The more
                 concrete and well-framed the material, the stronger the analysis.</i>
@@ -631,6 +761,13 @@
             
             <p>There is a second factor too: memory. In some cases, memory is useful—especially for self-analysis, ongoing projects, or long-term lines of inquiry where accumulated context improves depth. But when you want the AAF to behave more like a
             cold-start engine, past memory can become a distortion. In those cases, use a fresh temporary chat, use a tool like Google AI Studio where the analysis starts with no personal history attached, or use a chat service with memory turned off or simply not available.</p>
+
+            <p>There is also an important exception. Many of the case studies in this project were done in the same chat window, and
+            they remained strong precisely because the goal was not to compare multiple new works in a live, fragile context, but to
+            run a consistent analytical framework across subjects the model already knew deeply from its training. In that setting,
+            shared context can actually help by reinforcing the style, rigor, and depth of the audit. The risk is greater when you
+            are evaluating multiple new or unfinished works in one thread—especially in the same domain—because one can begin to
+            distort the frame of the next.</p>
             
             <h3>Does the AAF punish originality?</h3>
             <p>No. One of its core functions is to separate genuine emergence from polished incoherence. One of the framework’s core assumptions is that people often dismiss what they do not yet understand. The AAF is
@@ -654,7 +791,22 @@
             image, or victory.</p>
         </div>
 
-        <footer> by <a href="https://beakbahama.net/" target="_blank" rel="noopener">M~</a></footer>
+        <footer>
+            <div class="footer-links">
+                <a href="https://aistudio.google.com/app/prompts/1D9eTTbMVGxZcfAMaidPAViJ--cutCv2L" target="_blank"
+                    rel="noopener">Ready-Made Engine</a>
+                <a href="https://github.com/beakbahama/analyze-anything/blob/main/guides/main.md" target="_blank"
+                    rel="noopener">Main Guide</a>
+                <a href="https://github.com/beakbahama/analyze-anything/blob/main/guides/main.md#the-prompt" target="_blank"
+                    rel="noopener">Main Prompt</a>
+                <a href="https://github.com/beakbahama/analyze-anything?tab=readme-ov-file#case-studies" target="_blank"
+                    rel="noopener">Case Studies</a>
+                <a href="https://github.com/beakbahama/analyze-anything" target="_blank" rel="noopener">GitHub Repo</a>
+            </div>
+            <div class="footer-credit">
+                by <a href="https://beakbahama.net/" target="_blank" rel="noopener">M~</a>
+            </div>
+        </footer>
     </main>
 </body>
 
