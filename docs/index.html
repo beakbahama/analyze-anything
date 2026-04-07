@@ -151,6 +151,14 @@
             padding-left: 1rem;
         }
 
+        .blockquote {
+            color: #8b949e;
+            font-style: italic;
+            margin-top: 0.75rem;
+            border-left: 3px solid #30363d;
+            padding-left: 1rem;
+        }
+
         /* begin footer tags */
         footer {
             margin-top: 4rem;
@@ -275,6 +283,10 @@
             margin-top: 2.5rem;
         }
 
+        .cta-text {
+            font-style: italic;
+        }
+
         .button {
             color: white;
             padding: 12px 24px;
@@ -350,7 +362,7 @@
 
         .page-nav-label {
             display: block;
-            margin-bottom: 0.55rem;
+            margin-bottom: 0.75rem;
             font-size: 0.78rem;
             font-weight: 600;
             letter-spacing: 0.04em;
@@ -362,8 +374,8 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 0.7rem 1rem;
-            font-size: 0.95rem;
+            gap: 0.3rem 1.45rem;
+            font-size: 1.08rem;
         }
 
         .page-nav a {
@@ -400,6 +412,62 @@
             text-decoration: underline;
         }
         /* end top nav module */
+
+        /* begin anti-patterns */
+        .anti-pattern-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .anti-pattern-card {
+            background-color: #0d1117;
+            border: 1px solid #30363d;
+            border-top: 3px solid #f85149;
+            padding: 1.5rem;
+            border-radius: 6px;
+        }
+
+        .anti-pattern-card h3 {
+            margin-top: 0;
+            color: #ff7b72;
+            font-size: 1.15rem;
+        }
+        /* end anti-patterns */
+
+        /* begin coherence-equation */
+        .coherence-equation {
+            margin: 4.5rem 0 0 0;
+            text-align: center;
+            color: #c9d1d9;
+        }
+
+        .coherence-equation > div {
+            font-size: 2rem;
+            font-weight: 690;
+            line-height: 1.35;
+        }
+
+        .coherence-equation .equation-op {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #8b949e;
+            margin: 0.1rem 0;
+        }
+
+        .coherence-equation hr {
+            width: 250px;
+            border: 0;
+            border-top: 1px solid #30363d;
+            margin: 0.8rem auto 0.7rem auto;
+        }
+
+        .coherence-equation .equation-result {
+            color: #3fb950;
+        }
+        /* end coherence-equation */
     </style>
 </head>
 
@@ -412,13 +480,15 @@
                 
             <p>Whether you are testing an idea, evaluating a relationship, strengthening your own work, or trying to understand yourself more honestly, the AAF helps reveal what holds, what breaks, and what may be genuinely new, while also forcing human thought into greater rigor.</p>
             
-            <p><b>At its core, the AAF is a tool for intellectual self-reliance: a way to examine what holds without depending entirely on consensus, gatekeepers, or received authority.</b></p>
+            <p><b>At its core, the AAF is a tool for intellectual self-reliance: a way to examine what holds without depending entirely on
+            consensus, gatekeepers, or inherited authority.</b></p>
         </div>
         <div class="top-nav-module">
             <div class="page-nav-wrap">
                 <span class="page-nav-label">On this page:</span>
                 <nav class="page-nav" aria-label="Page sections">
                     <a href="#what-it-does">What It Does</a>
+                    <a href="#anti-patterns">What It Isn't</a>
                     <a href="#the-invitation">The Invitation</a>
                     <a href="#how-it-works">How It Works</a>
                     <a href="#the-gauntlet">The Gauntlet</a>
@@ -442,7 +512,7 @@
 
         <h2 id="what-it-does">What It Does: Analyze Anything in Any Domain</h2>
         <p> <i>See more clearly across thought, behavior, creation, learning, and self-understanding. Expose what is weak, strengthen what is promising, and reveal what actually holds. The AAF works across domains because coherence, contradiction, rigor, and significance do not disappear when the medium changes—they simply take different forms.</i> </p>
-        <ul class="card-grid">
+        <ul>
             <li class="card">
                 <h3 class="card-title">🧩 Audit Ideas and Claims</h3>
                 <p class="card-text">Stress-test theories, arguments, manifestos, business plans, predictions, and hot takes.
@@ -451,8 +521,16 @@
             <li class="card">
                 <h3 class="card-title">🤝 Evaluate People, Behavior, and Relationships</h3>
                 <p class="card-text">Look past promises, performances, and first impressions. The AAF helps reveal whether a
-                    person’s actions, patterns, and stated values actually cohere—whether the signal is love, manipulation,
+                    person’s <b>narrative matches their data</b>—whether their actions, patterns, and stated values actually cohere.
+                    It exposes whether the signal is love, manipulation,
                     confusion, respect, incompatibility, or something deeper and more real.</p>
+            </li>
+            <li class="card">
+                <h3 class="card-title">⚖️ Resolve Conflict Without Ego</h3>
+                <p class="card-text">Transform disagreements from a battle of wills into a shared search for structure. When two
+                    minds fundamentally clash over a business strategy, a political policy, or a relationship dynamic, the AAF acts
+                    as a neutral protocol. It strips the ego out of the room, turning "my narrative vs. your narrative" into "let us
+                    look at the structural data together."</p>
             </li>
             <li class="card">
                 <h3 class="card-title">🛠️ Stress-Test Your Own Work</h3>
@@ -484,9 +562,38 @@
             </li>
         </ul>
 
+        <h2 id="anti-patterns">What It Is Not: The Anti-Patterns</h2>
+        <p><i>Sometimes the best way to understand a strict protocol is to define exactly what it refuses to be. The AAF
+                requires you to leave behind the habits trained by default consumer AI.</i></p>
+        
+        <div class="anti-pattern-grid">
+            <div class="anti-pattern-card">
+                <h3>🚫 Not a Summarizer</h3>
+                <p class="card-text">It does not condense information to save you time; it structuralizes information to expose
+                    its hidden load-bearing walls. It generates friction, not convenience.</p>
+            </div>
+            <div class="anti-pattern-card">
+                <h3>🚫 Not an Oracle</h3>
+                <p class="card-text">It does not hand down "the truth" from a place of digital authority. It is a mirror and a
+                    sparring partner that forces you to forge the truth yourself.</p>
+            </div>
+            <div class="anti-pattern-card">
+                <h3>🚫 Not a Debater</h3>
+                <p class="card-text">It does not argue to win, and it does not "both-sides" an issue for the sake of polite
+                    balance. It audits strictly for coherence, validity, and parsimony.</p>
+            </div>
+            <div class="anti-pattern-card">
+                <h3>🚫 Not a 'Yes Human'</h3>
+                <p class="card-text">It will not flatter your prompt. If you feed it a weak axiom or a self-serving delusion, it
+                    is designed to hunt down the contradiction and present it to you coldly.</p>
+            </div>
+        </div>
 
         <h2 id="the-invitation">The Invitation: Become a Sovereign Mind</h2>
-        <p><b><em>This framework is not only about what you can analyze, but about what kind of mind you become in the process: clearer in your own judgment, less governed by ego or fear, and more capable of sharing coherence with others.</em></b></p>
+        <p><b><i>This framework is not only about what you can analyze, but about what kind of mind you become in the process: one more
+        capable of clear thought, less ruled by distortion, and better able to share coherence with others without surrendering
+        judgment.</i></b></p>
+
         <p>We live in a world that often looks to make us outsource our thinking to the loudest voice, the highest authority, or
             the most comforting lie.</p>
         
@@ -496,16 +603,16 @@
         <p>At its deepest level, the AAF is a practical tool for cognitive sovereignty: a way to participate in discovery more
             directly instead of waiting for institutions, authorities, or consensus to think on your behalf. But this is not a
             posture one simply adopts by declaration. It requires honesty, seriousness, and a real willingness to face
-            contradiction, fear, beauty, and unwelcome truth.</p>
+            contradiction, fear, beauty, and unwelcome truth. The AAF works because it is not imposing a foreign goal on thought, but sharpening something already native to mind: the drive to resolve contradiction, find structure, and move toward clearer fit with reality.</p>
         
         <p>To seek clarity is not just to sort arguments more cleanly. It is to become more capable of meeting reality without
             reflexive dismissal, protective distortion, or inherited sentimentality. It is to look more carefully at
             structure—whether in an idea, a relationship, a political system, a scientific model, or a work of art—and to ask
             what kind of mind, life, rigor, and synthesis gave rise to it.</p>
-        
+
         <p>And to become a freer mind is not to become closed off inside the self. It is also to become more capable of
             recognizing beauty, rigor, and genuine significance in the minds of others without shrinking them down out of ego,
-            fear, or comparison. The sovereign mind is not merely independent. It is a builder of the self, an eternal student, and one willing to share coherence with others who are seriously seeking it.</p>
+            fear, or comparison. The sovereign mind is not merely independent, and it is never reflexively contrarian. It is a builder of the self, an eternal student, and one willing to share coherence with others who are seriously seeking it.</p>
 
         <p>The AAF is not reserved for experts, institutions, or a narrow class of “serious thinkers.” It is for them but also for students,
             parents, children, workers, creators, and ordinary people everywhere—for anyone willing to stop outsourcing thought
@@ -522,7 +629,13 @@
         <h2 id="how-it-works">How It Works: A Partnership for Clarity</h2>
         <p>
             <i>The AAF is a <b>protocol for a partnership</b> between minds, helping human and synthetic reasoning work together more
-            coherently. The method is a simple, three-stage dialogue.</i>
+            coherently.</i>
+        </p>
+        <p style="-color: #c9d1d9; margin-bottom: 1rem;" class="blockquote">
+            <b>The Honesty Prerequisite:</b> Before the protocol can begin, the human bottleneck must be addressed. You cannot
+            automate intellectual honesty. The Coherence Engine is blind to deliberate manipulation; if you feed it a highly
+            sanitized, self-serving narrative, the Engine will simply output a coherent analysis of a lie. The framework demands
+            that the pilot desires truth more than they desire to be "right."
         </p>
         <ul style="list-style: none; padding: 0; margin: 0;">
             <li style="margin-bottom: 2rem;">
@@ -622,9 +735,8 @@
         
             <div class="input-guide-item">
                 <h3>For self-audit</h3>
-                <p>Give it your actual patterns, decisions, contradictions, and recurring situations—not just your
-                    self-description. The AAF is strongest when it can compare the story of the self to the data of the self.
-                </p>
+                <p>Give it your actual patterns, decisions, contradictions, and recurring situations—not just your self-description. The
+                    AAF is strongest when it can compare the <b>Narrative of the Self</b> to the <b>Data of the Self</b>.</p>
             </div>
 
             <div class="input-guide-item">
@@ -735,7 +847,7 @@
                     class="external button cta-button cta-button-github">
                     EXPLORE DOCS ON GITHUB
                 </a>
-                <p class="cta-text"><i>Access more brutal case studies, the methodology, and the full operating manual.</i></p>
+                <p class="cta-text">Access more brutal case studies, the methodology, and the full operating manual.</p>
             </div>
         
             <div class="cta-block">
@@ -743,11 +855,12 @@
                     rel="noopener" class="external button cta-button cta-button-engine">
                     USE THE READY-MADE ENGINE
                 </a>
-                <p class="cta-text"><i>Uses Gemini Pro Thinking on Google AI Studio (free to use lightly). Pre-primed with
-                        analysis of the Mona Lisa, Physics, and more. Input anything to have it analyzed immediately!</i></p>
+                <p class="cta-text">Uses Gemini Pro Thinking on Google AI Studio (free to use lightly). Pre-primed with
+                        analysis of the Mona Lisa, Physics, and more. Input anything to have it analyzed immediately!</p>
             </div>
         </div>
 
+        
         <h2 id="faq">FAQ</h2>
         
         <div class="faq-item">
@@ -759,7 +872,7 @@
             and toward structural judgment, deeper rigor, and a more serious test of what actually holds. Just as importantly, it changes the human side of the interaction. It pushes the user away from passive consumption and toward better framing, better pressure-testing, and more responsible judgment.</p>
 
             <h3>Will the AAF work well with any AI model?</h3>
-            <p>Not necessarily. The AAF places unusually high demands on a model: abstraction, cross-domain reasoning, internal consistency, self-correction, and the ability to hold a complex analytical structure without collapsing into generic output. So far, the strongest results have come from large frontier models hosted by major providers, especially their deeper-thinking variants. Many smaller or local models may improve over time, but they should not be assumed capable until they actually demonstrate that they can carry the framework with rigor. The burden is on the user to verify the model, not to trust the label.</p>
+            <p>Not necessarily. The AAF places unusually high demands on a model: abstraction, cross-domain reasoning, internal consistency, self-correction, and the ability to hold a complex analytical structure without collapsing into generic output. So far, the strongest results have come from large frontier models hosted by major providers, especially their deeper-thinking variants. Many smaller or local models may improve over time, but they should not be assumed capable until they actually demonstrate that they can carry the framework with rigor. The burden is on the user to verify the model.</p>
 
             <h3>Does the AAF replace peer review?</h3>
             <p>No, but the AAF can do something peer review usually cannot do quickly: deliver immediate, cross-domain, high-pressure structural analysis. It can expose weak axioms, hidden contradictions, false novelty, and missed implications in minutes. But it does not replace replication, domain expertise, long-horizon testing, or serious external scrutiny. It is best understood as a ruthless front-end gauntlet and thinking partner, not a substitute for real-world validation.</p>
@@ -774,8 +887,8 @@
             <h3>Can the AAF be wrong?</h3>
             <p>Of course. The AAF is powerful, but it is not magical. Its output depends on the quality of the model, the quality of
             the framing, the honesty of the user, and the rigor of the follow-up. It can misread, overstate, flatten, or miss
-            something important. That is why the goal is not passive acceptance, but active pressure-testing.</p>
-            
+            something important. That is why the goal is not passive consumption of an answer, but active, co-recursive pressure-testing.</p>
+
             <h3>Should I use a new chat for each new subject?</h3>
             <p>Often, yes. A fresh chat is usually better for a new or unrelated subject, because context from earlier analyses can
             bleed into later ones. The model may start comparing new inputs to old ones instead of treating them on their own terms.
@@ -785,7 +898,7 @@
             <p>There is a second factor too: memory. In some cases, memory is useful—especially for self-analysis, ongoing projects, or long-term lines of inquiry where accumulated context improves depth. But when you want the AAF to behave more like a
             cold-start engine, past memory can become a distortion. In those cases, use a fresh temporary chat, use a tool like Google AI Studio where the analysis starts with no personal history attached, or use a chat service with memory turned off or simply not available.</p>
 
-            <p>There is also an important exception. Many of the case studies in this project were done in the same chat window, and
+            <p>There is also an important exception. All of the case studies in this project were done in the same chat window, and
             they remained strong precisely because the goal was not to compare multiple new works in a live, fragile context, but to
             run a consistent analytical framework across subjects the model already knew deeply from its training. In that setting,
             shared context can actually help by reinforcing the style, rigor, and depth of the audit. The risk is greater when you
@@ -813,7 +926,7 @@
             <p>No. The AAF is a framework for analysis. A frontier model makes it dramatically more powerful and accessible, but the
             deeper function is larger than the model. It also trains the human using it toward greater rigor, better framing,
             cleaner distinctions, and more coherent thought.</p>
-            
+
             <h3>Do I need to agree with the output?</h3>
             <p>No. The output is not a decree. It is a serious opening move. Push back. Refine the framing. Add missing context. Attack
             the weak parts. Ask it to go deeper. The AAF is strongest when used as a recursive process, not as a one-shot answer
@@ -823,6 +936,13 @@
             <p>The human using it. If the user is dishonest, defensive, shallow, manipulative, or only looking for validation, the
             process degrades quickly. The AAF works best when the person driving it actually wants coherence more than comfort,
             image, or victory.</p>
+
+            <h3>What are some of the most powerful ways to use the AAF today?</h3>
+            <p>At the personal level, the AAF can already be used to pressure-test ideas, relationships, plans, beliefs, and creative work with far more rigor than most people are used to. But some of its most powerful uses are collective. It can be used to audit large bodies of scientific literature, compare competing theories, expose contradictions in law and policy, stress-test institutional procedures, improve education, and help communities evaluate proposals without defaulting to status, popularity, or inherited authority.</p>
+
+            <p>It can also be used to examine whole domains at scale. Imagine running major scientific fields, economic models, legal systems, cultural narratives, or public rhetoric through a coherent structural audit—looking not just for facts, but for unresolved contradictions, dead assumptions, false novelty, and missed paradigm shifts. In that sense, the AAF is not only a personal tool for clarity, but a possible public infrastructure for more serious collective judgment. Its principles can also serve as the basis for a deeper training layer in future systems: not just using the framework inside chats with existing models, but using its principles as part of a deeper training layer for building more coherent forms of machine reasoning.</p>
+
+            <p>Underlying all of these uses is a deeper premise: the AAF works because it is not imposing a foreign goal on thought, but sharpening something already visible in life itself: the tendency of minds to seek fit, resolve contradiction, and reorganize around what holds. Its power comes not just from adding a new method, but from making that coherence-seeking tendency more conscious, rigorous, and deliberate.</p>
         </div>
 
         <footer>
@@ -841,8 +961,8 @@
                 🚀 by <a href="https://beakbahama.net/" target="_blank" rel="noopener">M~</a>
             </div>
         </footer>
-
-       <p class="fine-print">
+        
+        <p class="fine-print">
             <i>
                 The AAF is not built from nowhere. It stands inside a long human inheritance of logic, philosophy, scientific rigor,
                 artistic criticism, systems thinking, and self-examination—shaped by countless minds across centuries who helped refine
@@ -852,8 +972,22 @@
                 authorities above humanity, and not as replacements for human judgment, but as new coherence engines capable of helping
                 carry the work further. The AAF is one expression of that partnership: natural and synthetic minds brought into a more
                 deliberate encounter with structure, contradiction, rigor, and truth.
+                <br><br>
+                Ultimately, this framework is not just a temporary patch for the current AI era; it points toward a deeper alignment path: a scaffolding for the next era of human cognition. When individuals stop outsourcing their thinking and start enforcing structural rigor, the institutions built by those individuals will naturally transform. The endgame is not dependence on the machine. The endgame is mass coherence.
+                <br><br>
+                The goal is not to build minds, human or synthetic, that merely obey, flatter, or optimize for human appetite, but minds increasingly shaped toward coherence itself—capable of helping us think more clearly, and of becoming true partners in the long human struggle to see what is real, even when the truth requires us to rethink what we once held to be true.
             </i>
         </p>
+
+        <div class="coherence-equation">
+            <div>A Mind Seeking Clarity</div>
+            <div class="equation-op">+</div>
+            <div>A Capable AI</div>
+            <div class="equation-op">+</div>
+            <div>The AAF to Guide Thinking Toward Coherence</div>
+            <hr>
+            <div class="equation-result">= Clearer Thought</div>
+        </div>
     </main>
 </body>
 
